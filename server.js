@@ -1,12 +1,13 @@
 const express = require('express');
-const routes = require('./src/routes')
+const routes = require('./src/routes');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
+const cors = require('cors');
 
+routes(app);
+app.use(cors());
 
-routes(app)
-
-app.listen(port,() => console.log(`servidor rodando na porta ${port}`))
+app.listen(port,() => console.log(`servidor rodando na porta ${port}`));
 
 module.exports = app;
