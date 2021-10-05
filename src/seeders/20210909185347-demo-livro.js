@@ -7,8 +7,8 @@ module.exports = {
   
      return queryInterface.bulkInsert('Livros', [{
        nome: 'Barba Ensopada de Sangue',
-        autor: 'Daniel Gaelera',
-        editora: 'Compania das Letras',
+        autor: 'Daniel Galera',
+        editora: 'Companhia das Letras',
         ano: 2012,
         genero: 'Mistério',
         foto: 'https://m.media-amazon.com/images/I/51suPAhsH1L.jpg',
